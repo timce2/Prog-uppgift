@@ -1,0 +1,56 @@
+<html >
+  <head>
+    <meta charset="utf-8" />
+    <style>
+    li {
+		color: blue;
+	}
+
+    </style>
+  </head>
+  <body>
+    <ol>
+       <li>1</li>
+       <li>6</li>
+       <li>2</li>
+       <li>0</li>
+       <li>4</li>
+       <li>3</li>
+       <li>5</li>
+    </ol>
+    <script>
+// Namn: timce2 - Tim Martinsson
+// Du ska använda dig av metoder *push* och *pop* i Array för att lösa 
+// dessa uppgifter. Du vill att listan ovan ska vändas upp och ned. Så 
+// att det tal som står längst ned kommer överst. Du ska också öka alla 
+// talen med ett. Tänk på att bara skriva kod mellan kommentarerna 
+// nedan.
+// Du måste utgå ifrån att det skulle kunna stå andra tal i listan.
+
+
+window.onload = function (){
+    let my_list_of_number = [];
+   
+    let i=0; 
+    for(let element of document.getElementsByTagName("li")) {
+		my_list_of_number[i]=Number(element.innerHTML);
+	    i++;
+    }
+    let my_result=[];
+    // Din kod börjar här.
+    
+    my_list_of_number[0]++;
+    my_result = my_list_of_number;
+    
+    // Din kod slutar här
+   
+   i=0;
+   for(let element of document.getElementsByTagName("li")) {
+		element.innerHTML = my_result[i];
+		i++; 
+    }
+}
+
+    </script>
+  </body>
+</html>

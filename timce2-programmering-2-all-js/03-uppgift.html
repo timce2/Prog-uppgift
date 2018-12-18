@@ -1,0 +1,63 @@
+<html >
+  <head>
+    <meta charset="utf-8" />
+    <style>
+    .red {
+		color: red;
+	}
+	
+	.green {
+		color: green;
+	}
+    </style>
+  </head>
+  <body>
+     <ol id="min-lista">
+        <li class="red">M</li>
+        <li class="red">M</li>
+        <li class="red">M</li>
+        <li class="red">M</li>
+        <li class="red">M</li>
+        <li class="red">M</li>
+     </ol>
+    <script>
+// Namn: timce2 - Tim Martinsson
+// Funktionen *comapre* nedan fungerar inte! Och all din kod blir fel! 
+// Gör om den så att den gör en bra jämförelse som fungerar med koden 
+// nedan. Det betyder att om de två imparameterna "borde" vara lika 
+// enlligt vanlig matematik så ska funktionen returnera sant.
+
+function compare(n1,n2) {
+	return n1 === n2;
+}
+
+window.onload = function (){
+if(compare(0.1+0.2, 0.3)) {
+	document.getElementsByTagName("li")[0].className="green";
+}
+
+if(compare(1+1, 2)) {
+	alert("hej");
+	document.getElementsByTagName("li")[1].className="green";
+}
+
+if(compare(0.8+0.9, 1.7)) {
+	document.getElementsByTagName("li")[2].className="green";
+}
+
+if(!compare(0.1+0.1, 0.1)) {
+	document.getElementsByTagName("li")[3].className="green";
+}
+
+if(!compare(0.10000001+0.2, 0.3)) {
+	document.getElementsByTagName("li")[4].className="green";
+}
+
+if(compare(0.6+0.3, 0.9)) {
+	getElementsByTagName("li")[5].className="green";
+}
+}
+
+    </script>
+  </body>
+</html>

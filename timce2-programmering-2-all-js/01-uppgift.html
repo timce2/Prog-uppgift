@@ -1,0 +1,46 @@
+<html >
+  <head>
+    <meta charset="utf-8" />
+        <style>
+        .blue {
+		   color: blue;
+	    }
+    </style>
+  </head>
+  <body>
+    <h1 class = "blue", id="text">timce2</h1>
+    <button onclick="onClick()">Byt!</button>
+    <script>
+// Namn: timce2 - Tim Martinsson
+// Skriv kod så att när någon trycker på knappen "byt" så kommer ditt 
+// alias bytas till ditt namn. Om någon trycker på kanppen igen byttes 
+// namn tillbaka till alias och så vidare. 
+function onClick() {
+
+// Din kod här
+  
+  //här skapar jag mina variablar med mitt alias och namn som en text string
+  var namn = "Tim Martinsson";
+  var alias = "timce2";
+
+  //Här hämtar jag mitt id i ett if statement om "text" är = variablen namn så ska den byta till alias
+  if(document.getElementById("text").innerHTML === namn)
+  {
+    document.getElementById("text").innerHTML = alias;
+  }
+
+  else
+
+  //Här hämtar jag mitt document id i ett if statement om "blue" är = variablen alias så ska den byta till namn
+  if(document.getElementById("text").innerHTML === alias)
+  {
+    document.getElementById("text").innerHTML = namn;
+  }
+
+  //här kör jag en snabb check så att om man klickar på knapen så kommer ett medelande till konsolen som säger "Click!"
+  console.log("Click!");
+}
+
+    </script>
+  </body>
+</html>

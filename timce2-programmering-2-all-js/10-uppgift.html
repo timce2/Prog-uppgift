@@ -1,0 +1,35 @@
+<html >
+  <head>
+    <meta charset="utf-8" />
+    <style>
+    .big {
+		font-size: 128;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+	}
+
+    </style>
+  </head>
+  <body>
+    <h1 class="big">0</h1>
+    <script>
+// Namn: timce2 - Tim Martinsson
+// Läs in tre filerna "a.txt", "b.txt" och "c.txt". Använd funktionen 
+// *fetch* för att läsa dessa filer. Kombinera sedan de promise du 
+// får till en promise som blir klar när alla filer är lästa. Då ska du 
+// multiplicera de värden som finns i filerna och skriva ut det i h1 
+// elementet ovan.
+
+
+window.onload = function (){
+	// Din kod nedför här. Du kan ta bort kod om du vill.
+	fetch('./a.txt').then(function(data) {
+		document.getElementsByTagName("li")[0]=data;
+	});
+	
+	 // Din kod ovanför här.
+
+}
+
+    </script>
+  </body>
+</html>

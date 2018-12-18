@@ -1,0 +1,56 @@
+<html >
+  <head>
+    <meta charset="utf-8" />
+    <style>
+
+    </style>
+  </head>
+  <body>
+	  <p>Katt säger: <strong>?</strong></p>
+	  <p>Katt är: <strong>?</strong></p>
+	  <p>Kappa säger: <strong>?</strong></p>
+	  <p>Kappa är: <strong>?</strong></p>
+    <script>
+// Namn: timce2 - Tim Martinsson
+// Implementera metoden *say* för katt nedan. Denna metod ska returnera
+// "sound" egenskapen. Implmentera sedan *description* metoden i katt. 
+// Denna ska returnera en mening som innehåller egenskapen "species" och 
+// resultat från "say".
+// Se sedan till att kapa får dessa metoder också genom att ta dem ifrån
+// ko och ge dem till kappa. 
+
+let ko = {
+	species: "katt",
+	sound: "mjau",
+	say: function() {
+		//skriv om raden nedan
+		return "!";
+	},
+    description: function() {
+		// Skriv om raden nedan.
+		return "!"
+	}
+}
+
+let kappa = {
+	sound: "buuu",
+	species : "demon",
+} 
+
+// Modifiera kappa objectet så det är i enlighet med uppgiften beskrivningen ovan.
+// Din kod börjar här.
+
+
+// Din kod slutar här.
+
+
+window.onload = function() {
+   document.getElementsByTagName("strong")[0].innerHTML = ko.say();
+   document.getElementsByTagName("strong")[1].innerHTML = ko.description();
+   document.getElementsByTagName("strong")[2].innerHTML = ko.say();
+   document.getElementsByTagName("strong")[3].innerHTML = ko.description();
+}
+
+    </script>
+  </body>
+</html>

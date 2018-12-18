@@ -1,0 +1,67 @@
+<html >
+  <head>
+    <meta charset="utf-8" />
+    <style>
+    .yellow {
+		color: yellow;
+	}
+	
+	.blue {
+		color:blue;
+	}
+    </style>
+  </head>
+  <body>
+     <ol id="min-lista">
+        <li class="red">Maria Andersson ord är min lag.</li>
+     </ol>
+    <script>
+// Namn: timce2 - Tim Martinsson
+// Du har slarvat med din kurser. För att få tillbaka motiveringen ska
+// du skriva "Maria Andersson ord är min lag." 100 
+// gånger. Gör det så texten hamnar i ol element ovan med id 
+// "min-lista". Gör så att den första har stylen "yellow" och den andra 
+//  "blue" och växla sedan mellan dem.
+//  **Tips:** Använd document.getElementById() för att får objectet som 
+//  motsvarar "ol" och sätt sedan egenskapen "inerHTML" i det objektet 
+//  till en lämplig text som du skapat.
+//  **Tips:** Har du glömt hur ett "li" ser ut så kan du använda detta:
+//  "<li class="din-klass">Din text</li>" 
+
+window.onload = function (){
+
+// Din kod börjar här.
+
+var text1 = document.getElementById("min-lista").innerHTML = '<li class="blue">Maria Andersson ord är min lag.</li>';
+
+
+function texten() {
+    var node = document.createElement("LI");
+    node.classList.add("blue");
+    var textnode = document.createTextNode("Maria Andersson ord är min lag.");
+    node.appendChild(textnode);
+    document.getElementById("min-lista").appendChild(node);
+}
+
+
+
+var antal = 99;
+ 
+ for (var i = 0; i < antal; i++) 
+ {
+     skrivTexten();
+ }
+  
+ function skrivTexten() 
+ {
+   texten();
+  //document.write(text1+text2);
+ }
+
+
+// Din kod slutar här
+}
+
+    </script>
+  </body>
+</html>
