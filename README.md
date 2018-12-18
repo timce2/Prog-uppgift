@@ -1,2 +1,3 @@
-# Prog-uppgift
-Prog uppgift
+#Quatro Question
+
+A program to give questions with four alternatives.
