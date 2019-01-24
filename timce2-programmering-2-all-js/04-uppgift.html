@@ -20,7 +20,18 @@
 
 function removeFakeWord(text) {
 	// Ändra denna funktion
+
+  //jag använder .split för att ta bort ej
+  text = text.split("ej");
+
+  //jag använder .join för att sätta ihop texten till en sträng så att "," försvinner ifrån när jag använde mig av .split
+  text = text.join(" ");
+  
+  //skickar ut en console.log för att se att min text funktion fungerar som den ska
+  console.log(text);
 	return text;
+
+  //Jag försökte använda mig av slice men jag kunde inte komma på hur jag ska göra för att bara få bort "ej" men tillslut så insåg jag att om jag använde mig bara av split så försvinner ej så det löste sig tillslut :)
 }
 
 window.onload = function (){

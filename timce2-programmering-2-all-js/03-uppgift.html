@@ -1,4 +1,4 @@
-<html >
+   <html >
   <head>
     <meta charset="utf-8" />
     <style>
@@ -28,7 +28,20 @@
 // enlligt vanlig matematik så ska funktionen returnera sant.
 
 function compare(n1,n2) {
-	return n1 === n2;
+
+  //Här skapar jag en if sats om n1 är mindre än 1
+  if(n1 < 1)
+  {
+    //här så tar jag talet och använder math.floor för att avrunda det jämt och sedan multiplecerar med 10 för att få ett bättre nummer för datorn
+    n1 = Math.floor(n1*10);
+
+    //här delar jag n1 med 10 igen för att få nummeret att bli det som det borde vara fast denna gången correct
+    n1 = n1/10;
+  };
+  
+  //skickar ut en console.log för att titta så att mina nummmer stämmer
+  console.log(n1);
+  return n1 === n2;
 }
 
 window.onload = function (){
@@ -54,7 +67,7 @@ if(!compare(0.10000001+0.2, 0.3)) {
 }
 
 if(compare(0.6+0.3, 0.9)) {
-	getElementsByTagName("li")[5].className="green";
+	document.getElementsByTagName("li")[5].className="green";
 }
 }
 
